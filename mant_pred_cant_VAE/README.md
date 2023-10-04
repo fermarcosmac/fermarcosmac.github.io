@@ -25,19 +25,31 @@
             <tr>
                 <th>Grabación (id)</th>
                 <td><b>Original</b></td>
-                <td><b>Reconstruído</b></td>
+                <td><b>Modelo 1</b></td>
+                <td><b>Modelo 2</b></td>
+                <td><b>Modelo 3</b></td>
             </tr>
             <!-- Row 2 -->
             <tr>
                 <th>1</th>
                 <td>
                     <audio controls="">
-                        <source src="github_samples3/original/SNEAK_HW2_FNM_ST_02-05_WALK_KMR81.R.wav">
+                        <source src="mant_pred_cant_VAE/samples_original/frag_002_5.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="github_samples3/reconstruido/SNEAK_HW2_FNM_ST_02-05_WALK_KMR81.R.wav">
+                        <source src="mant_pred_cant_VAE/samples_model1/frag_002_5.wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls="">
+                        <source src="mant_pred_cant_VAE/samples_model2/frag_002_5.wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls="">
+                        <source src="mant_pred_cant_VAE/samples_model3/frag_002_5.wav">
                     </audio>
                 </td>
             </tr>
@@ -46,12 +58,22 @@
                 <th>2</th>
                 <td>
                     <audio controls="">
-                        <source src="github_samples3/original/HEEL_HW5 DOCK_05-06_WALK_416.L.wav">
+                        <source src="mant_pred_cant_VAE/samples_original/frag_003_10.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="github_samples3/reconstruido/HEEL_HW5 DOCK_05-06_WALK_416.L.wav">
+                        <source src="mant_pred_cant_VAE/samples_model1/frag_003_10.wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls="">
+                        <source src="mant_pred_cant_VAE/samples_model2/frag_003_10.wav">
+                    </audio>
+                </td>
+                <td>
+                    <audio controls="">
+                        <source src="mant_pred_cant_VAE/samples_model3/frag_003_10.wav">
                     </audio>
                 </td>
             </tr>
