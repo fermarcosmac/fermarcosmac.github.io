@@ -18,6 +18,10 @@
 
 ####  Our results demonstrate the model's ability to reconstruct and represent in latent space the recorded sounds, the differences in operating conditions and between different equipment. In the future, this should facilitate the classification of sounds, as well as the detection of anomalies and degradation patterns in the operation of the machinery.
 
+
+
+## Algunos ejemplos de reconstrucción VAE
+
 <div class="figure">
     <table>
         <tbody>
