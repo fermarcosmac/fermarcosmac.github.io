@@ -79,7 +79,7 @@
             </tr>
             <!-- Row 4 -->
             <tr>
-                <th>Metal 1</th>
+                <th>3</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/HEEL_METAL1_05-04_WALK_KMR81.R.wav">
@@ -93,7 +93,7 @@
             </tr>
             <!-- Row 5 -->
             <tr>
-                <th>Metal 2</th>
+                <th>4</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/SNEAK_GRATE_07-07_WALK_KMR81.R.wav">
@@ -107,7 +107,7 @@
             </tr>
             <!-- Row 6 -->
             <tr>
-                <th>Roca 1</th>
+                <th>5</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/DRESS_ASPH_06-04_WALK_KMR81.R.wav">
@@ -121,7 +121,7 @@
             </tr>
             <!-- Row 7 -->
             <tr>
-                <th>Roca 2</th>
+                <th>6</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/FLAT_MARBLE_08-06_WALK_416.L.wav">
@@ -135,7 +135,7 @@
             </tr>
             <!-- Row 8 -->
             <tr>
-                <th>Tela 1</th>
+                <th>7</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/BOOT_CARP1_19-04_WALK_KMR81.R.wav">
@@ -149,7 +149,7 @@
             </tr>
             <!-- Row 9 -->
             <tr>
-                <th>Tela 2</th>
+                <th>8</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/HEEL_CARP1_06-05_WALK_416.L.wav">
@@ -163,7 +163,7 @@
             </tr>
             <!-- Row 10 -->
             <tr>
-                <th>Tierra 1</th>
+                <th>9</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/BOOT_GRASS_WALK_416.L.wav">
@@ -177,7 +177,7 @@
             </tr>
             <!-- Row 11 -->
             <tr>
-                <th>Tierra 2</th>
+                <th>10</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/BOOT_DIRT_WALK_KMR81.R.wav">
@@ -191,7 +191,7 @@
             </tr>
             <!-- Row 12 -->
             <tr>
-                <th>Otros 1</th>
+                <th>Test</th>
                 <td>
                     <audio controls="">
                         <source src="github_samples3/original/SNEAK_SNOW_SWEET_WALK_KMR81.R.wav">
@@ -200,20 +200,6 @@
                 <td>
                     <audio controls="">
                         <source src="github_samples3/reconstruido/SNEAK_SNOW_SWEET_WALK_KMR81.R.wav">
-                    </audio>
-                </td>
-            </tr>
-            <!-- Row 13 -->
-            <tr>
-                <th>Otros 2</th>
-                <td>
-                    <audio controls="">
-                        <source src="github_samples3/original/SNEAK_WATER_SWEET_WALK_KMR81.R.wav">
-                    </audio>
-                </td>
-                <td>
-                    <audio controls="">
-                        <source src="github_samples3/reconstruido/SNEAK_WATER_SWEET_WALK_KMR81.R.wav">
                     </audio>
                 </td>
             </tr>
