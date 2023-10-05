@@ -1,6 +1,6 @@
 # IA PARA EL MANTENIMIENTO PREDICTIVO EN CANTERAS: MODELADO
 
-#### Autores: Fernando Marcos, Viginia Yagüe, Mateo Cámara, Rodrigo Tamaki y José Luis Blanco
+#### Autores: Fernando Marcos, Rodrigo Tamaki, Mateo Cámara, Viginia Yagüe y José Luis Blanco
 
 ### Resumen: 
 
