@@ -46,22 +46,22 @@
                 <th>1</th>
                 <td>
                     <audio controls="">
-                        <source src="./mant_pred_cant_VAE/samples_original/frag_002_5.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_002_5.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="./mant_pred_cant_VAE/samples_model1/frag_002_5.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_002_5.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="./mant_pred_cant_VAE/samples_model2/frag_002_5.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_002_5.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_002_5.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_002_5.wav">
                     </audio>
                 </td>
             </tr>
