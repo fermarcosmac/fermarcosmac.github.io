@@ -70,22 +70,22 @@
                 <th>2</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_003_10.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_003_10.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_003_10.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_003_10.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_003_10.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_003_10.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_003_10.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_003_10.wav">
                     </audio>
                 </td>
             </tr>
@@ -94,22 +94,22 @@
                 <th>3</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_004_84.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_004_84.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_004_84.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_004_84.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_004_84.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_004_84.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_004_84.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_004_84.wav">
                     </audio>
                 </td>
             </tr>
@@ -118,22 +118,22 @@
                 <th>4</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_005_271.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_005_271.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_005_271.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_005_271.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_005_271.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_005_271.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_005_271.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_005_271.wav">
                     </audio>
                 </td>
             </tr>
@@ -142,22 +142,22 @@
                 <th>5</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_006_1030.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_006_1030.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_006_1030.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_006_1030.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_006_1030.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_006_1030.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_006_1030.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_006_1030.wav">
                     </audio>
                 </td>
             </tr>
@@ -166,22 +166,22 @@
                 <th>6</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_007_31.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_007_31.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_007_31.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_007_31.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_007_31.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_007_31.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_007_31.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_007_31.wav">
                     </audio>
                 </td>
             </tr>
@@ -190,22 +190,22 @@
                 <th>7</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_008_125.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_008_125.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_008_125.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_008_125.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_008_125.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_008_125.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_008_125.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_008_125.wav">
                     </audio>
                 </td>
             </tr>
@@ -214,22 +214,22 @@
                 <th>8</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_009_180.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_009_180.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_009_180.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_009_180.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_009_180.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_009_180.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_009_180.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_009_180.wav">
                     </audio>
                 </td>
             </tr>
@@ -238,22 +238,22 @@
                 <th>9</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_010_4.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_010_4.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_010_4.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_010_4.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_010_4.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_010_4.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_010_4.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_010_4.wav">
                     </audio>
                 </td>
             </tr>
@@ -262,22 +262,22 @@
                 <th>10</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_011_185.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_011_185.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_011_185.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_011_185.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_011_185.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_011_185.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_011_185.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_011_185.wav">
                     </audio>
                 </td>
             </tr>
@@ -286,22 +286,22 @@
                 <th>11</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_012_171.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_012_171.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_012_171.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_012_171.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_012_171.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_012_171.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_012_171.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_012_171.wav">
                     </audio>
                 </td>
             </tr>
@@ -310,22 +310,22 @@
                 <th>Test</th>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_original/frag_013_5.wav">
+                        <source src="./vae-estereo-canteras/samples_original/frag_013_5.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model1/frag_013_5.wav">
+                        <source src="./vae-estereo-canteras/samples_model1/frag_013_5.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model2/frag_013_5.wav">
+                        <source src="./vae-estereo-canteras/samples_model2/frag_013_5.wav">
                     </audio>
                 </td>
                 <td>
                     <audio controls="">
-                        <source src="mant_pred_cant_VAE/samples_model3/frag_013_5.wav">
+                        <source src="./vae-estereo-canteras/samples_model3/frag_013_5.wav">
                     </audio>
                 </td>
             </tr>
