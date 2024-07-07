@@ -41,5 +41,9 @@ In addition to the analytical approach, a statistical learning framework was imp
 
 | System | Signal | \\(x(t)\\) | \\(y(t)\\) | \\(\hat{y}(t)\\): *pipeline* |
 |--------|--------|------------|------------|------------------------------|
+|FP11-66 | ESS | | | |
+|FP11-72 | ESS | | | |
+|FP11-78 | ESS | | | |
+|FP11-84 | ESS | | | |
 
 
