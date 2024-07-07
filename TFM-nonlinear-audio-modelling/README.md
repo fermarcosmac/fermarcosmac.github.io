@@ -14,7 +14,7 @@ In addition to the analytical approach, a statistical learning framework was imp
 
 ### Results:
 
-| System | Signal | SNR | \(x(t)\) | \(y(t)\) | \(\hat{y}(t): \textit{pipeline}\) | \(\hat{y}(t): \textit{learning}\) |
+| System | Signal | SNR | $x(t)$   | $y(t)$   | $\hat{y}(t)$: *pipeline*          | $\hat{y}(t)$: *learning*         |
 |--------|--------|-----|----------|----------|-----------------------------------|----------------------------------|
 |        |        |     |          |          |                                   |                                  |
 |        |        |     |          |          |                                   |                                  |
