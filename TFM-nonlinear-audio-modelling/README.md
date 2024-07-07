@@ -19,7 +19,7 @@ In addition to the analytical approach, a statistical learning framework was imp
 </script>
 
 
-| System | Signal | SNR | $x(t)$   | $y(t)$   | $\hat{y}(t)$: *pipeline*          | $\hat{y}(t)$: *learning*         |
+| System | Signal | SNR | \\(x(t)\\)   | $y(t)$   | $\hat{y}(t)$: *pipeline*          | $\hat{y}(t)$: *learning*         |
 |--------|--------|-----|----------|----------|-----------------------------------|----------------------------------|
 | BPLP | ESS | 0 | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_0_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_0_y.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_0_yhat.wav" type="audio/wav"></audio> | - |
 | BPLP | ESS | $\infty$ | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_Inf_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_Inf_y.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_Inf_yhat.wav" type="audio/wav"></audio> | - |
