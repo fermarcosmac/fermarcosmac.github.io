@@ -14,6 +14,10 @@ In addition to the analytical approach, a statistical learning framework was imp
 
 ### Results:
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+</script>
+
 | System | Signal | SNR | $x(t)$   | $y(t)$   | $\hat{y}(t)$: *pipeline*          | $\hat{y}(t)$: *learning*         |
 |--------|--------|-----|----------|----------|-----------------------------------|----------------------------------|
 | BPLP | ESS | 0 | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_0_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_0_y.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/ESS_BPLP_0_yhat.wav" type="audio/wav"></audio> | - |
