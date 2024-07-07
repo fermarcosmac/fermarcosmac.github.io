@@ -41,9 +41,9 @@ In addition to the analytical approach, a statistical learning framework was imp
 
 | System | Signal | \\(x(t)\\) | \\(y(t)\\) | \\(\hat{y}(t)\\): *pipeline* |
 |--------|--------|------------|------------|------------------------------|
-|FP11-66 | ESS | | | |
-|FP11-72 | ESS | | | |
-|FP11-78 | ESS | | | |
-|FP11-84 | ESS | | | |
+|FP11-66 | ESS | <audio controls style="width: 80px;"><source src="web_audios/FP11_66_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_66_y.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_66_yhat.wav" type="audio/wav"></audio> |
+|FP11-72 | ESS | <audio controls style="width: 80px;"><source src="web_audios/FP11_72_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_72_y.wav" type="audio/wav"></audio>  | <audio controls style="width: 80px;"><source src="web_audios/FP11_72_yhat.wav" type="audio/wav"></audio> |
+|FP11-78 | ESS | <audio controls style="width: 80px;"><source src="web_audios/FP11_78_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_78_y.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_78_yhat.wav" type="audio/wav"></audio> |
+|FP11-84 | ESS | <audio controls style="width: 80px;"><source src="web_audios/FP11_84_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_84_y.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_84_yhat.wav" type="audio/wav"></audio> |
 
 
