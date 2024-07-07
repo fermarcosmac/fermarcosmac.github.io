@@ -47,3 +47,16 @@ In addition to the analytical approach, a statistical learning framework was imp
 |FP11-84 | ESS | <audio controls style="width: 80px;"><source src="web_audios/FP11_84_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_84_y.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/FP11_84_yhat.wav" type="audio/wav"></audio> |
 
 
+### Inversion: WB System
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
+</script>
+
+| Order | \\(x(t)\\) | \\(\hat{x}(t)\\)|
+|-------|------------|-----------------|
+| 1 | <audio controls style="width: 80px;"><source src="web_audios/WB_inv_1_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/WB_inv_1_xhat.wav" type="audio/wav"></audio> |
+| 2 | <audio controls style="width: 80px;"><source src="web_audios/WB_inv_2_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/WB_inv_2_xhat.wav" type="audio/wav"></audio> |
+| 3 | <audio controls style="width: 80px;"><source src="web_audios/WB_inv_3_x.wav" type="audio/wav"></audio> | <audio controls style="width: 80px;"><source src="web_audios/WB_inv_3_xhat.wav" type="audio/wav"></audio> |
+
+
