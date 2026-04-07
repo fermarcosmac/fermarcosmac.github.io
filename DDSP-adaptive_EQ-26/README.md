@@ -10,7 +10,7 @@
 
 ## Overview
 
-This page supports the paper by providing a longer-form summary, a compact explanation of the proposed framework, visual material, controlled examples of the adaptive behavior, and reproducible audio demonstrations.
+This page supports the paper by providing a longer-form summary, a compact explanation of the proposed framework, visual material, controlled examples of the adaptive behavior, and reproducible audio demonstrations. $`\sqrt{3x-1}+(1+x)^2`$ \\sqrt{3x-1}+(1+x)^2`\\
 
 The paper presents a modular DDSP-based framework for adaptive room equalization (ARE) that unifies classical adaptive filtering and differentiable audio optimization in a single closed-loop setting. In the manuscript, the framework is organized around four interchangeable components: the equalizer structure, the response-estimation method, the loss function, and the optimizer. A key theoretical point is that Fx-LMS appears as a special case under standard assumptions. The experiments further show that frequency-domain losses are more stable than time-domain losses in the considered nonstationary music scenarios, and that reliable online response estimation is important for stable adaptation. fileciteturn1file0 fileciteturn1file3 fileciteturn1file16
 
