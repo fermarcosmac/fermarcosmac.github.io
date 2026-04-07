@@ -10,7 +10,7 @@
 
 ## Overview
 
-This page supports the paper by providing a longer-form summary, a compact explanation of the proposed framework, visual material, controlled examples of the adaptive behavior, and reproducible audio demonstrations. $`\sqrt{3x-1}+(1+x)^2`$ \\sqrt{3x-1}+(1+x)^2`\\
+This page supports the paper by providing a longer-form summary, a compact explanation of the proposed framework, visual material, controlled examples of the adaptive behavior, and reproducible audio demonstrations. $\sqrt{3x-1}+(1+x)^2$
 
 The paper presents a modular DDSP-based framework for adaptive room equalization (ARE) that unifies classical adaptive filtering and differentiable audio optimization in a single closed-loop setting. In the manuscript, the framework is organized around four interchangeable components: the equalizer structure, the response-estimation method, the loss function, and the optimizer. A key theoretical point is that Fx-LMS appears as a special case under standard assumptions. The experiments further show that frequency-domain losses are more stable than time-domain losses in the considered nonstationary music scenarios, and that reliable online response estimation is important for stable adaptation. fileciteturn1file0 fileciteturn1file3 fileciteturn1file16
 
@@ -46,10 +46,10 @@ The diagram below should summarize the full closed-loop pipeline: input frame, p
 
 <!-- Replace with your schematic figure -->
 <p align="center">
-  <img src="assets/figures/Adaptive_EQ_schematic.pdf" alt="Proposed adaptive room equalization framework" width="92%">
+  <img src="assets/figs/human1_animation_frame_mic2_dp0.png" alt="Proposed adaptive room equalization framework" width="92%">
 </p>
 
-**Figure 1.** Block diagram of the proposed adaptive room equalization system. The LEM block stands for loudspeaker-enclosure-microphone, although the linear response of other elements in the sound system (e.g., amplifiers, transmission lines, crossover filters) is also included in $`\mathbf{s}_k`$.
+**Figure 1.** Block diagram of the proposed adaptive room equalization system. The LEM block stands for loudspeaker-enclosure-microphone, although the linear response of other elements in the sound system (e.g., amplifiers, transmission lines, crossover filters) is also included in $\mathbf{s}\_k$.
 
 The manuscript frames ARE as a frame-wise closed-loop controller. The input signal is segmented into non-overlapping frames, passed through a parametric equalizer, propagated through the room/system response, measured, compared to a target response, and used to update the equalizer parameters once per frame. The paper also emphasizes the frame-length trade-off between update rate and spectral resolution, with 8192 samples chosen as the best compromise in the ablation study. fileciteturn1file17 fileciteturn1file1
 
