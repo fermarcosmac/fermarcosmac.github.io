@@ -532,21 +532,10 @@ assets/
 
 ---
 
-# Reproducibility notes
-
-Add links to:
-- the paper PDF,
-- the Git repository,
-- the model/configuration files,
-- the exact evaluation scripts,
-- the audio source files or generated excerpts,
-- and any environment details needed to reproduce the figures and tables.
-
-You can also add a short “How to cite” block here.
+# How to cite
+TODO
 
 ---
-
-# Suggested closing statement
 
 Thank you for reading. This page accompanies the paper with additional explanations, figures, and audio examples so that the experiments and control behavior can be inspected interactively.
 
