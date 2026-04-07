@@ -57,7 +57,7 @@ The manuscript frames ARE as a frame-wise closed-loop controller. The input sign
 
 Use this section to define the symbols exactly as they appear in the manuscript.
 
-- $u_k$: input frame at time index $k$
+- $`u_k`$: input frame at time index $k$
 - $x_k$: equalizer output
 - $s_k$: time-varying room / LEM response
 - $y_k$: measured output at the capture device
