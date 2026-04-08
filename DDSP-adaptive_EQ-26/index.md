@@ -12,6 +12,13 @@ layout: default
 
 ---
 
+<!-- Framework block diagram -->
+<p align="center">
+  <img src="assets/figs/Adaptive_EQ_schematic.png" alt="Proposed adaptive room equalization framework" width="92%">
+</p>
+
+**Figure 1.** Block diagram of the proposed adaptive room equalization system. The LEM block stands for loudspeaker-enclosure-microphone, although the linear response of other elements in the sound system (e.g., amplifiers, transmission lines, crossover filters) is also included in $\mathbf{s}_k$.
+
 ## Overview
 
 This page supports the paper by providing a longer-form summary, a compact explanation of the proposed framework, visual material, controlled examples of the adaptive behavior, and reproducible audio demonstrations.
@@ -23,7 +30,7 @@ The paper presents a modular DDSP-based framework for adaptive room equalization
 
 Adaptive room equalization (ARE) aims to compensate time-varying acoustic coloration so that playback matches a target response even when the sound system response, room conditions or listener position changes. In the paper, this is cast as a closed-loop control problem: audio is processed in frames, the current equalized output is measured, a loss is computed against a target response, and the equalizer parameters are updated online.
 
-The main contribution is a differentiable and modular formulation that keeps the signal chain explicit and flexible. This makes it easy to swap equalizer structures, response estimators, losses, and optimizers without changing the overall loop. The manuscript highlights that this framework is not intended as a final deployed room-equalization product, but as an open and reproducible basis for exploring the relationship between classical adaptive filtering and DDSP-style optimization. The corresponding *PyTorch* implementation is provided in the accompanying repository (LINK) so that the framework can be further inspected and modified.
+The main contribution is a differentiable and modular formulation that keeps the signal chain explicit and flexible. This makes it easy to swap equalizer structures, response estimators, losses, and optimizers without changing the overall loop. The implemented experiments are not intended as a final deployed room-equalization product, but as an open and reproducible basis for exploring the relationship between classical adaptive filtering and DDSP-style optimization. The corresponding *PyTorch* source code is provided in the accompanying repository (LINK) so that the framework can be further inspected and modified.
 
 Empirically, the paper reports that frequency-domain objectives are better suited to the tested musical and time-varying scenarios than time-domain MSE, and that structured parametric equalization can outperform long FIR baselines (Fx-LMS, Fx-FDAF) under the same experimental conditions. The manuscript also reports that frame length, response-estimation quality, and optimizer choice create a meaningful trade-off between responsiveness, stability, and compute cost.
 
@@ -44,13 +51,6 @@ The proposed framework establishes a principled link between classical Fx-LMS an
 ## Conceptual overview
 
 The diagram below should summarize the full closed-loop pipeline: input frame, parametric EQ, loudspeaker-enclosure-microphone path, online response estimation, target response, differentiable loss, and optimizer update.
-
-<!-- Replace with your schematic figure -->
-<p align="center">
-  <img src="assets/figs/Adaptive_EQ_schematic.png" alt="Proposed adaptive room equalization framework" width="92%">
-</p>
-
-**Figure 1.** Block diagram of the proposed adaptive room equalization system. The LEM block stands for loudspeaker-enclosure-microphone, although the linear response of other elements in the sound system (e.g., amplifiers, transmission lines, crossover filters) is also included in $\mathbf{s}_k$.
 
 The manuscript frames ARE as a frame-wise closed-loop controller. The input signal is segmented into non-overlapping frames, passed through a parametric equalizer, propagated through the room/system response, measured, compared to a target response, and used to update the equalizer parameters once per frame. The paper also emphasizes the frame-length trade-off between update rate and spectral resolution, with 8192 samples chosen as the best compromise in the ablation study.
 
