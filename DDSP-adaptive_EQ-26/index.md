@@ -14,7 +14,7 @@ layout: default
 
 <!-- Framework block diagram -->
 <p align="center">
-  <img src="assets/figs/EQ_response_example.png" alt="Proposed adaptive room equalization framework" width="92%">
+  <img src="assets/figs/example_EQ_animation.gif" alt="Proposed adaptive room equalization framework" width="92%">
 </p>
 
 ## Overview
