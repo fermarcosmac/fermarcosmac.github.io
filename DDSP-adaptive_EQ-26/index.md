@@ -50,7 +50,18 @@ The diagram below should summarize the full closed-loop pipeline: input frame, p
 
 <!-- Replace with your schematic figure -->
 <p align="center">
-  <img src="assets/figs/Adaptive_EQ_schematic.pdf" alt="Proposed adaptive room equalization framework" width="92%">
+  <object
+    data="assets/figs/Adaptive_EQ_schematic.pdf"
+    type="application/pdf"
+    width="92%"
+    height="620"
+    aria-label="Proposed adaptive room equalization framework"
+  >
+    <p>
+      This browser cannot embed PDF files.
+      <a href="assets/figs/Adaptive_EQ_schematic.pdf" target="_blank" rel="noopener">Open the figure PDF</a>.
+    </p>
+  </object>
 </p>
 
 **Figure 1.** Block diagram of the proposed adaptive room equalization system. The LEM block stands for loudspeaker-enclosure-microphone, although the linear response of other elements in the sound system (e.g., amplifiers, transmission lines, crossover filters) is also included in $\mathbf{s}_k$.
