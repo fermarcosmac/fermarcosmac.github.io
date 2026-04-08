@@ -14,7 +14,7 @@ layout: default
 
 <!-- Framework block diagram -->
 <p align="center">
-  <img src="assets/figs/example_EQ_animation.gif" alt="Proposed adaptive room equalization framework" width="92%">
+  <img src="assets/figs/example_EQ_animation.gif" alt="Example adaptive EQ animation" width="92%">
 </p>
 
 **Figure 1.** Example of the proposed adaptive room EQ framework. A parametric EQ continuously adapts to "flatten" the response of a time-varying room/soundsystem response. The excitation signal is a music track and the corrections are performed using the iHAM-1 method and a frequency-domain loss.
@@ -78,3 +78,10 @@ The following notation is used throughout the paper
 - $N$: frame length (samples)
 - $M$: number of biquads of parametric EQ
 - $G$: global EQ gain (dB)
+
+
+## Time-varying acoustic scenarios
+<!-- Framework block diagram -->
+<p align="center">
+  <img src="assets/figs/moving_listener.gif" alt="Moving listener position scenario" width="92%">
+</p>
