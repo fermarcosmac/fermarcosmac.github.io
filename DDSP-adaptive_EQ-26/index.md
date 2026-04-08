@@ -68,6 +68,6 @@ The following notation is used throughout the paper
 - $H^\*(e^{j\omega})$: target response
 - $L(\cdot)$: differentiable loss
 - $\Delta \bar{\theta}_k$: parameter update
-- frame length (samples): $N$
-- number of biquads of parametric EQ: $M$
-- global gain parameter: $G$
+- $N$: frame length (samples)
+- $M$: number of biquads of parametric EQ
+- $G$: global EQ gain (dB)
