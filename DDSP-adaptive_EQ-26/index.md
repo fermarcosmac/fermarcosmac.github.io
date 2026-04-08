@@ -40,6 +40,45 @@ The paper evaluates the framework in controlled simulations based on measured ro
 
 The proposed framework establishes a principled link between classical Fx-LMS and differentiable audio optimization in a closed-loop adaptive room-equalization setting. The manuscript concludes that frequency-domain losses are more appropriate than time-domain MSE for the tested nonstationary conditions, that accurate online response estimation is essential for stable adaptation, and that the proposed modular implementation provides a flexible basis for future algorithmic development.
 
+---
+
+# Proposed framework
+
+## Conceptual overview
+
+The diagram below should summarize the full closed-loop pipeline: input frame, parametric EQ, loudspeaker-enclosure-microphone path, online response estimation, target response, differentiable loss, and optimizer update.
+
+<!-- Replace with your schematic figure -->
+<p align="center">
+  <img src="assets/figs/Adaptive_EQ_schematic.pdf" alt="Proposed adaptive room equalization framework" width="92%">
+</p>
+
+**Figure 1.** Block diagram of the proposed adaptive room equalization system. The LEM block stands for loudspeaker-enclosure-microphone, although the linear response of other elements in the sound system (e.g., amplifiers, transmission lines, crossover filters) is also included in $\mathbf{s}_k$.
+
+The manuscript frames ARE as a frame-wise closed-loop controller. The input signal is segmented into non-overlapping frames, passed through a parametric equalizer, propagated through the room/system response, measured, compared to a target response, and used to update the equalizer parameters once per frame. The paper also emphasizes the frame-length trade-off between update rate and spectral resolution, with 8192 samples chosen as the best compromise in the ablation study.
+
+## Notation
+
+Use this section to define the symbols exactly as they appear in the manuscript.
+
+- $u_k$: input frame at time index $k$
+- $x_k$: equalizer output
+- $s_k$: time-varying room / LEM response
+- $y_k$: measured output at the capture device
+- $y_k^\*$: target output
+- $\bar{\theta}_k$: equalizer parameter vector
+- $H_{\mathrm{EQ}}(e^{j\omega}; \bar{\theta})$: parametric equalizer frequency response
+- $H^\*(e^{j\omega})$: target response
+- $L(\cdot)$: differentiable loss
+- $\Delta \bar{\theta}_k$: parameter update
+
+You can add any paper-specific conventions here, for example:
+- frame length $N$
+- number of biquads $M$
+- global gain $G$
+- optimizer hyperparameters
+- estimator smoothing factors
+
 $$
 \theta_{k+1} = \theta_k + \Delta \theta_k
 $$
