@@ -81,7 +81,15 @@ The following notation is used throughout the paper
 
 
 ## Time-varying acoustic scenarios
-<!-- Framework block diagram -->
+<!-- Scenarios animations -->
 <p align="center">
   <img src="assets/figs/moving_listener.gif" alt="Moving listener position scenario" width="100%">
 </p>
+
+**Figure 3.** Caption!
+
+<p align="center">
+  <img src="assets/figs/moving_person.gif" alt="Moving listener position scenario" width="100%">
+</p>
+
+**Figure 4.** Caption! 
