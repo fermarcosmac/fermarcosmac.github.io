@@ -17,7 +17,7 @@ layout: default
   <img src="assets/figs/example_EQ_animation.gif" alt="Example adaptive EQ animation" width="92%">
 </p>
 
-**Figure 1.** Example of the proposed adaptive room EQ framework. A parametric EQ continuously adapts to "flatten" the response of a time-varying room/soundsystem response. The excitation signal is a music track and the corrections are performed using the iHAM-1 method and a frequency-domain loss.
+**Figure 1.** Example of the proposed adaptive room EQ framework. A parametric EQ continuously adapts to "flatten" the frequency response of a time-varying room/soundsystem response. The excitation signal is a music track and the corrections are performed using the iHAM-1 method and a frequency-domain loss.
 
 ## Overview
 
