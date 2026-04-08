@@ -18,7 +18,6 @@ This page supports the paper by providing a longer-form summary, a compact expla
 
 The paper presents a modular DDSP-based framework for adaptive room equalization (ARE) that unifies classical adaptive filtering and differentiable audio optimization in a single closed-loop setting. In the manuscript, the framework is organized around four interchangeable components: the equalizer (EQ) structure, the response-estimation method, the loss function, and the optimizer. A key theoretical point is that the classical Fx-LMS algorithm appears as a special case under standard assumptions. The experiments further show that frequency-domain losses are more stable than time-domain losses in the considered nonstationary musical excitation scenarios, and that reliable online response estimation is very important for stable adaptation.
 
----
 
 ## Extended summary
 
@@ -28,13 +27,11 @@ The main contribution is a differentiable and modular formulation that keeps the
 
 Empirically, the paper reports that frequency-domain objectives are better suited to the tested musical and time-varying scenarios than time-domain MSE, and that structured parametric equalization can outperform long FIR baselines (Fx-LMS, Fx-FDAF) under the same experimental conditions. The manuscript also reports that frame length, response-estimation quality, and optimizer choice create a meaningful trade-off between responsiveness, stability, and compute cost.
 
----
 
 ## Limitations and future work
 
 The paper evaluates the framework in controlled simulations based on measured room impulse responses, so the reported results should be interpreted within that scope. We highlight that real-world deployment factors such as crowd noise, nonlinear loudspeaker and microphone behavior, converter quantization, thermal drift, and uncontrolled listener movement are not yet covered. Future work should study robustness in those conditions, as well as low-information frames and more optimized implementations of higher-order update rules.
 
----
 
 ## Conclusions
 
