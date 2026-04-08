@@ -59,7 +59,7 @@ The diagram below should summarize the full closed-loop pipeline: input frame, p
 
 **Figure 2.** Block diagram of the proposed adaptive room equalization system. The LEM block stands for loudspeaker-enclosure-microphone, although the linear response of other elements in the sound system (e.g., amplifiers, transmission lines, crossover filters) is also included in $\mathbf{s}_k$.
 
-The manuscript frames ARE as a frame-wise closed-loop controller. The input signal is segmented into non-overlapping frames, passed through a parametric equalizer, propagated through the room/system response, measured, compared to a target response, and used to update the equalizer parameters once per frame. The paper also emphasizes the frame-length trade-off between update rate and spectral resolution, with 8192 samples chosen as the best compromise in the ablation study.
+This framework casts the ARE task as a frame-wise closed-loop controller. The input signal is segmented into non-overlapping frames, passed through a parametric equalizer, propagated through the room/system response, measured, compared to a target response, and used to update the equalizer parameters once per frame. The frame-length rises as a fundamental trade-off in our work, balancing between update rate and spectral resolution. In an ablation study, the size of 8192 samples is chosen as the best compromise and is used throughout. All of the experiments can be re-run with different step sizes in the repository (LINK).
 
 ## Notation
 
