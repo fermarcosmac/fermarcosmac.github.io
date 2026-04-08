@@ -59,7 +59,7 @@ The manuscript frames ARE as a frame-wise closed-loop controller. The input sign
 
 ## Notation
 
-Use this section to define the symbols exactly as they appear in the manuscript.
+The following notation is used throughout the paper
 
 - $u_k$: input frame at time index $k$
 - $x_k$: equalizer output
@@ -71,14 +71,6 @@ Use this section to define the symbols exactly as they appear in the manuscript.
 - $H^\*(e^{j\omega})$: target response
 - $L(\cdot)$: differentiable loss
 - $\Delta \bar{\theta}_k$: parameter update
-
-You can add any paper-specific conventions here, for example:
-- frame length $N$
-- number of biquads $M$
-- global gain $G$
-- optimizer hyperparameters
-- estimator smoothing factors
-
-$$
-\theta_{k+1} = \theta_k + \Delta \theta_k
-$$
+- frame length (samples): $N$
+- number of biquads of parametric EQ: $M$
+- global gain parameter: $G$
