@@ -86,10 +86,10 @@ The following notation is used throughout the paper
   <img src="assets/figs/moving_listener.gif" alt="Moving listener position scenario" width="100%">
 </p>
 
-**Figure 3.** Caption!
+**Figure 3.** Animation depicting the simulated moving listener scenario. With a fixed speaker position, the position of the listener is changed smoothly via interpolation of the measured frequency responses (SoundCam dataset - conference room). This results in large yet realistic structural changes in the acoustic response. Because of this, this is treated in the analysis as the wrost case scenario---when also dealing with (nonstationary) musical excitation signals.
 
 <p align="center">
   <img src="assets/figs/moving_person.gif" alt="Moving listener position scenario" width="100%">
 </p>
 
-**Figure 4.** Caption! 
+**Figure 4.** Animation depicting the simulated moving person scenario. With a fixed loudspeaker and listener position, the position of a person within the room is varied smoothly via interpolation. This results in slight changes in the acoustic response, although representative of the real effect of a moving human within the confterence room (SoundCam dataset).
