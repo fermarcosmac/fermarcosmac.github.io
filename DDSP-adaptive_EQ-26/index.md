@@ -37,7 +37,7 @@ Empirically, the paper reports that frequency-domain objectives are better suite
 
 ## Limitations and future work
 
-The paper evaluates the framework in controlled simulations based on measured room impulse responses, so the reported results should be interpreted within that scope. We highlight that real-world deployment factors such as crowd noise, nonlinear loudspeaker and microphone behavior, converter quantization, thermal drift, and uncontrolled listener movement are not yet covered. Future work should study robustness in those conditions, as well as low-information frames and more optimized implementations of higher-order update rules.
+The paper evaluates the framework in controlled simulations based on measured room impulse responses, so the reported results should be interpreted within that scope. We highlight that real-world deployment factors such as crowd noise, loudspeaker/device nonlinearity, converter quantization, thermal drift, and uncontrolled listener movement are not yet covered. Future work should assess robustness in those conditions, as well as in the occurrence of low-information frames and further study real-time deployment with optimized implementations of higher-order update rules and accounting for I/O latency.
 
 
 ## Conclusions
