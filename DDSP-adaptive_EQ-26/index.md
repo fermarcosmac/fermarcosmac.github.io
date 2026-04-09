@@ -92,4 +92,4 @@ The following notation is used throughout the paper
   <img src="assets/figs/moving_person.gif" alt="Moving listener position scenario" width="100%">
 </p>
 
-**Figure 4.** Animation depicting the simulated moving person scenario. With a fixed loudspeaker and listener position, the position of a person within the room is varied smoothly via interpolation. This results in slight changes in the acoustic response, although representative of the real effect of a moving human within the confterence room (SoundCam dataset).
+**Figure 4.** Animation depicting the simulated moving person scenario. With a fixed loudspeaker and listener position, the position of a person within the room is varied smoothly via interpolation. This results in slight changes in the acoustic response, although representative of the real effect of a moving human within the conference room (SoundCam dataset).
