@@ -50,7 +50,7 @@ The proposed framework establishes a principled link between classical Fx-LMS an
 
 ## Conceptual overview
 
-The diagram below should summarize the full closed-loop pipeline: input frame, parametric EQ, loudspeaker-enclosure-microphone path, online response estimation, target response, differentiable loss, and optimizer update.
+The diagram below should summarize the full closed-loop pipeline: input frame, parametric EQ, loudspeaker-enclosure-microphone (LEM) path, online response estimation, target response, differentiable loss, and optimizer update.
 
 <!-- Framework block diagram -->
 <p align="center">
