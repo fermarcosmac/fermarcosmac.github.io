@@ -93,3 +93,54 @@ The following notation is used throughout the paper
 </p>
 
 **Figure 4.** Animation depicting the simulated moving person scenario. With a fixed loudspeaker and listener position, the position of a person within the room is varied smoothly via interpolation. This results in slight changes in the acoustic response, although representative of the real effect of a moving human within the conference room (SoundCam dataset).
+
+## Core equations
+
+Use the equations below as a template. Replace names, symbols, or formatting to match the final manuscript version.
+
+### Closed-loop parameter update
+
+$$
+\bar{\theta}_{k+1} = \bar{\theta}_k + \Delta \bar{\theta}_k
+$$
+
+### Parametric equalizer
+
+For a cascade of biquad sections:
+
+$$
+H_k(z; \theta_m) =
+\frac{b_{0,m} + b_{1,m}z^{-1} + b_{2,m}z^{-2}}
+     {a_{0,m} + a_{1,m}z^{-1} + a_{2,m}z^{-2}}
+$$
+
+and the full equalizer response:
+
+$$
+H_{\mathrm{EQ}}(e^{j\omega}; \bar{\theta}) = G \prod_{m=1}^{M} H_m(e^{j\omega}; \theta_m)
+$$
+
+### Example frequency-domain loss
+
+$$
+\mathrm{FD\text{-}MSE}(y_k, H^\*) =
+\frac{1}{N}\sum_{n=1}^{N}
+\left(
+\left| \frac{Y_k(e^{j\omega_n})}{U_k(e^{j\omega_n})} \right|
+-
+\left|H^\*(e^{j\omega_n})\right|
+\right)^2
+$$
+
+### Example optimizer updates
+
+Add the exact update rule(s) you want to show here.
+
+$$
+\bar{\theta}_{k+1} = \bar{\theta}_k - \eta_k \nabla_{\bar{\theta}} L(y_k, y_k^\*; \bar{\theta}_k)
+$$
+
+$$
+\bar{\theta}_{k+1} = \bar{\theta}_k - \left[\nabla_{\bar{\theta}}^2 L(y_k, y_k^\*; \bar{\theta}_k)\right]^{-1}
+\nabla_{\bar{\theta}} L(y_k, y_k^\*; \bar{\theta}_k)
+$$
