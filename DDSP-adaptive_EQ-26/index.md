@@ -96,7 +96,7 @@ The following notation is used throughout the paper
 
 ## Core equations
 
-Use the equations below as a template. Replace names, symbols, or formatting to match the final manuscript version.
+Hereafter a summary of the core equations used throughout the paper is presented.
 
 ### Closed-loop parameter update
 
@@ -134,8 +134,6 @@ $$
 
 ### Example optimizer updates
 
-Add the exact update rule(s) you want to show here.
-
 $$
 \bar{\theta}_{k+1} = \bar{\theta}_k - \eta_k \nabla_{\bar{\theta}} L(y_k, y_k^\*; \bar{\theta}_k)
 $$
@@ -144,3 +142,276 @@ $$
 \bar{\theta}_{k+1} = \bar{\theta}_k - \left[\nabla_{\bar{\theta}}^2 L(y_k, y_k^\*; \bar{\theta}_k)\right]^{-1}
 \nabla_{\bar{\theta}} L(y_k, y_k^\*; \bar{\theta}_k)
 $$
+
+## Audio demo
+
+The table below compares FD-MSE equalized versions of the same song. Rows correspond to transition time ($tt$), and columns correspond to optimizer. Within each row, switching optimizer keeps the same playback time position to enable seamless subjective comparison.
+
+<style>
+  .audio-demo-wrap {
+    overflow-x: auto;
+    margin: 1rem 0 1.4rem;
+  }
+
+  .audio-demo-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+    font-size: 0.96rem;
+  }
+
+  .audio-demo-table th,
+  .audio-demo-table td {
+    border: 1px solid #d7dde6;
+    padding: 0.6rem 0.55rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .audio-demo-table th {
+    background: #f3f6fa;
+    font-weight: 600;
+  }
+
+  .audio-demo-row.is-active {
+    background: #f8fcf8;
+  }
+
+  .tt-label {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .demo-play-btn,
+  .demo-ctrl-btn {
+    border: 1px solid #b9c5d6;
+    background: #ffffff;
+    color: #243447;
+    border-radius: 8px;
+    padding: 0.35rem 0.55rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    line-height: 1.2;
+  }
+
+  .demo-play-btn:hover,
+  .demo-ctrl-btn:hover {
+    background: #edf2f8;
+  }
+
+  .demo-play-btn.is-selected {
+    border-color: #7d9bbd;
+    background: #e7eff9;
+  }
+
+  .demo-play-btn.is-playing {
+    border-color: #2f855a;
+    background: #e6f6eb;
+    color: #14532d;
+    box-shadow: inset 0 0 0 1px rgba(47, 133, 90, 0.2);
+    font-weight: 600;
+  }
+
+  .demo-controls {
+    display: flex;
+    gap: 0.35rem;
+    justify-content: center;
+  }
+
+  .demo-status {
+    text-align: left;
+    margin-top: 0.6rem;
+    color: #4b5563;
+    font-size: 0.92rem;
+  }
+
+  .demo-status strong {
+    color: #1f2937;
+  }
+</style>
+
+<div class="audio-demo-wrap">
+  <table class="audio-demo-table" aria-label="Audio demo comparison by transition time and optimizer">
+    <thead>
+      <tr>
+        <th>Transition time ($tt$)</th>
+        <th>SGD</th>
+        <th>Adam</th>
+        <th>Newton</th>
+        <th>GHAM-1</th>
+        <th>GHAM-3</th>
+        <th>Controls</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="audio-demo-row" data-row-label="tt = 1.0 s">
+        <td class="tt-label">1.0 s</td>
+        <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Newton" data-src="assets/audio/example/EQ_Newton_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="GHAM-1" data-src="assets/audio/example/EQ_GHAM_1_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="GHAM-3" data-src="assets/audio/example/EQ_GHAM_3_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td>
+          <div class="demo-controls">
+            <button class="demo-ctrl-btn demo-pause-btn" type="button">Pause</button>
+            <button class="demo-ctrl-btn demo-stop-btn" type="button">Stop</button>
+          </div>
+        </td>
+        <td hidden>
+          <audio preload="metadata"></audio>
+        </td>
+      </tr>
+
+      <tr class="audio-demo-row" data-row-label="tt = 15.0 s">
+        <td class="tt-label">15.0 s</td>
+        <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Newton" data-src="assets/audio/example/EQ_Newton_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="GHAM-1" data-src="assets/audio/example/EQ_GHAM_1_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="GHAM-3" data-src="assets/audio/example/EQ_GHAM_3_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td>
+          <div class="demo-controls">
+            <button class="demo-ctrl-btn demo-pause-btn" type="button">Pause</button>
+            <button class="demo-ctrl-btn demo-stop-btn" type="button">Stop</button>
+          </div>
+        </td>
+        <td hidden>
+          <audio preload="metadata"></audio>
+        </td>
+      </tr>
+
+      <tr class="audio-demo-row" data-row-label="tt = 30.0 s">
+        <td class="tt-label">30.0 s</td>
+        <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Newton" data-src="assets/audio/example/EQ_Newton_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="GHAM-1" data-src="assets/audio/example/EQ_GHAM_1_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="GHAM-3" data-src="assets/audio/example/EQ_GHAM_3_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td>
+          <div class="demo-controls">
+            <button class="demo-ctrl-btn demo-pause-btn" type="button">Pause</button>
+            <button class="demo-ctrl-btn demo-stop-btn" type="button">Stop</button>
+          </div>
+        </td>
+        <td hidden>
+          <audio preload="metadata"></audio>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="demo-status" id="audio-demo-status">
+    <strong>Status:</strong> Stopped.
+  </p>
+</div>
+
+<script>
+  (function () {
+    var rows = Array.prototype.slice.call(document.querySelectorAll('.audio-demo-row'));
+    var statusEl = document.getElementById('audio-demo-status');
+
+    function clearRowVisual(row) {
+      row.classList.remove('is-active');
+      row.querySelectorAll('.demo-play-btn').forEach(function (btn) {
+        btn.classList.remove('is-playing');
+      });
+    }
+
+    function stopRow(row) {
+      var audio = row.querySelector('audio');
+      audio.pause();
+      audio.currentTime = 0;
+      clearRowVisual(row);
+    }
+
+    function stopOtherRows(activeRow) {
+      rows.forEach(function (row) {
+        if (row !== activeRow) {
+          stopRow(row);
+        }
+      });
+    }
+
+    function setStatus(text) {
+      statusEl.innerHTML = '<strong>Status:</strong> ' + text;
+    }
+
+    function markSelected(row, selectedBtn, isPlaying) {
+      row.querySelectorAll('.demo-play-btn').forEach(function (btn) {
+        btn.classList.remove('is-selected');
+        btn.classList.remove('is-playing');
+      });
+      selectedBtn.classList.add('is-selected');
+      if (isPlaying) {
+        selectedBtn.classList.add('is-playing');
+        row.classList.add('is-active');
+      } else {
+        row.classList.remove('is-active');
+      }
+    }
+
+    function switchAndPlay(row, btn) {
+      var audio = row.querySelector('audio');
+      var src = btn.getAttribute('data-src');
+      var label = btn.getAttribute('data-label');
+      var rowLabel = row.getAttribute('data-row-label');
+      var keepTime = audio.currentTime || 0;
+      var sameSource = audio.getAttribute('src') === src;
+
+      stopOtherRows(row);
+
+      markSelected(row, btn, true);
+
+      if (sameSource) {
+        audio.play().catch(function () {});
+        setStatus('Playing ' + label + ' at ' + rowLabel + '.');
+        return;
+      }
+
+      audio.pause();
+      audio.setAttribute('src', src);
+
+      var finalizeSwitch = function () {
+        if (isFinite(audio.duration) && audio.duration > 0) {
+          audio.currentTime = Math.min(keepTime, Math.max(0, audio.duration - 0.05));
+        }
+        audio.play().catch(function () {});
+        setStatus('Playing ' + label + ' at ' + rowLabel + '.');
+      };
+
+      if (audio.readyState >= 1) {
+        finalizeSwitch();
+      } else {
+        audio.addEventListener('loadedmetadata', finalizeSwitch, { once: true });
+      }
+    }
+
+    rows.forEach(function (row) {
+      var audio = row.querySelector('audio');
+      var pauseBtn = row.querySelector('.demo-pause-btn');
+      var stopBtn = row.querySelector('.demo-stop-btn');
+
+      row.querySelectorAll('.demo-play-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          switchAndPlay(row, btn);
+        });
+      });
+
+      pauseBtn.addEventListener('click', function () {
+        audio.pause();
+        row.classList.remove('is-active');
+        setStatus('Paused at ' + row.getAttribute('data-row-label') + '.');
+      });
+
+      stopBtn.addEventListener('click', function () {
+        stopRow(row);
+        setStatus('Stopped at ' + row.getAttribute('data-row-label') + '.');
+      });
+
+      audio.addEventListener('ended', function () {
+        clearRowVisual(row);
+        setStatus('Playback ended at ' + row.getAttribute('data-row-label') + '.');
+      });
+    });
+  })();
+</script>
