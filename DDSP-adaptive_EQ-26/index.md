@@ -145,7 +145,7 @@ $$
 
 ## Audio demo
 
-The table below compares FD-MSE equalized versions of the same song. Rows correspond to transition time ($tt$), and columns correspond to optimizer. Within each row, switching optimizer keeps the same playback time position to enable seamless subjective comparison. To download all audios corresponding to the main experiment of the paper, please refer to: https://drive.upm.es/s/DMEFt3Lj2e3gkDD
+The table below compares different versions of the same song using different configurations of the adaptive equalizer (all using FD-MSE loss). Rows correspond to transition time ($tt$), and columns correspond to optimizer. Within each row, switching optimizer keeps the same playback time position to enable seamless subjective comparison. To download all audios corresponding to the main experiment of the paper, please refer to: https://drive.upm.es/s/DMEFt3Lj2e3gkDD
 
 <style>
   .audio-demo-wrap {
@@ -156,16 +156,28 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
   .audio-demo-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 980px;
-    font-size: 0.96rem;
+    min-width: 0;
+    table-layout: fixed;
+    font-size: 0.9rem;
   }
 
   .audio-demo-table th,
   .audio-demo-table td {
     border: 1px solid #d7dde6;
-    padding: 0.6rem 0.55rem;
+    padding: 0.45rem 0.3rem;
     text-align: center;
     vertical-align: middle;
+  }
+
+  .audio-demo-table th:first-child,
+  .audio-demo-table td.tt-label {
+    width: 7.5ch;
+    min-width: 7.5ch;
+    max-width: 7.5ch;
+  }
+
+  .audio-demo-table th:last-child {
+    width: 10.5ch;
   }
 
   .audio-demo-table th {
@@ -180,6 +192,7 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
   .tt-label {
     font-weight: 600;
     white-space: nowrap;
+    font-size: 0.84rem;
   }
 
   .demo-play-btn,
@@ -188,10 +201,11 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
     background: #ffffff;
     color: #243447;
     border-radius: 8px;
-    padding: 0.35rem 0.55rem;
-    font-size: 0.9rem;
+    padding: 0.28rem 0.42rem;
+    font-size: 0.78rem;
     cursor: pointer;
     line-height: 1.2;
+    min-width: 3.9rem;
   }
 
   .demo-play-btn:hover,
@@ -264,7 +278,7 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
     <thead>
       <tr>
         <th>Transition time ($tt$)</th>
-        <th>Input</th>
+        <th>Desired</th>
         <th>No EQ</th>
         <th>SGD</th>
         <th>Adam</th>
@@ -277,7 +291,7 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
     <tbody>
       <tr class="audio-demo-row" data-row-label="tt = 1.0 s">
         <td class="tt-label">1.0 s</td>
-        <td><button class="demo-play-btn" data-label="Input" data-src="assets/audio/example/input_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Desired" data-src="assets/audio/example/desired_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="No EQ" data-src="assets/audio/example/noEQ_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
@@ -297,7 +311,7 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
 
       <tr class="audio-demo-row" data-row-label="tt = 15.0 s">
         <td class="tt-label">15.0 s</td>
-        <td><button class="demo-play-btn" data-label="Input" data-src="assets/audio/example/input_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Desired" data-src="assets/audio/example/desired_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="No EQ" data-src="assets/audio/example/noEQ_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
@@ -317,7 +331,7 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
 
       <tr class="audio-demo-row" data-row-label="tt = 30.0 s">
         <td class="tt-label">30.0 s</td>
-        <td><button class="demo-play-btn" data-label="Input" data-src="assets/audio/example/input_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="Desired" data-src="assets/audio/example/desired_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="No EQ" data-src="assets/audio/example/noEQ_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
