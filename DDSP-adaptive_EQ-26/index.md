@@ -123,29 +123,29 @@ $$
 ### Example frequency-domain loss
 
 $$
-\mathrm{FD\text{-}MSE}(y_k, H^\*) =
+\mathrm{FD\text{-}MSE}(y_k, H^*) =
 \frac{1}{N}\sum_{n=1}^{N}
 \left(
 \left| \frac{Y_k(e^{j\omega_n})}{U_k(e^{j\omega_n})} \right|
 -
-\left|H^\*(e^{j\omega_n})\right|
+\left|H^*(e^{j\omega_n})\right|
 \right)^2
 $$
 
 ### Example optimizer updates
 
 $$
-\bar{\theta}_{k+1} = \bar{\theta}_k - \eta_k \nabla_{\bar{\theta}} L(y_k, y_k^\*; \bar{\theta}_k)
+\bar{\theta}_{k+1} = \bar{\theta}_k - \eta_k \nabla_{\bar{\theta}} L(y_k, y_k^*; \bar{\theta}_k)
 $$
 
 $$
-\bar{\theta}_{k+1} = \bar{\theta}_k - \left[\nabla_{\bar{\theta}}^2 L(y_k, y_k^\*; \bar{\theta}_k)\right]^{-1}
-\nabla_{\bar{\theta}} L(y_k, y_k^\*; \bar{\theta}_k)
+\bar{\theta}_{k+1} = \bar{\theta}_k - \left[\nabla_{\bar{\theta}}^2 L(y_k, y_k^*; \bar{\theta}_k)\right]^{-1}
+\nabla_{\bar{\theta}} L(y_k, y_k^*; \bar{\theta}_k)
 $$
 
 ## Audio demo
 
-The table below compares FD-MSE equalized versions of the same song. Rows correspond to transition time ($tt$), and columns correspond to optimizer. Within each row, switching optimizer keeps the same playback time position to enable seamless subjective comparison.
+The table below compares FD-MSE equalized versions of the same song. Rows correspond to transition time ($tt$), and columns correspond to optimizer. Within each row, switching optimizer keeps the same playback time position to enable seamless subjective comparison. To download all audios corresponding to the main experiment of the paper, please refer to: https://drive.upm.es/s/DMEFt3Lj2e3gkDD
 
 <style>
   .audio-demo-wrap {
@@ -156,7 +156,7 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
   .audio-demo-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 760px;
+    min-width: 980px;
     font-size: 0.96rem;
   }
 
@@ -219,22 +219,53 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
   }
 
   .demo-status {
-    text-align: left;
-    margin-top: 0.6rem;
-    color: #4b5563;
-    font-size: 0.92rem;
+    margin-top: 0.75rem;
   }
 
-  .demo-status strong {
-    color: #1f2937;
+  .demo-progress-wrap {
+    border: 1px solid #d7dde6;
+    border-radius: 10px;
+    background: #f9fbfd;
+    padding: 0.65rem 0.8rem;
+  }
+
+  .demo-progress-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+    align-items: baseline;
+    margin-bottom: 0.35rem;
+    font-size: 0.92rem;
+    color: #334155;
+  }
+
+  .demo-progress-head strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  #audio-demo-progress {
+    width: 100%;
+    height: 12px;
+  }
+
+  @media (max-width: 640px) {
+    .demo-progress-head {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem;
+    }
   }
 </style>
 
 <div class="audio-demo-wrap">
+  <p><strong>Filthy Bird - I'd Like to Know (moving listener position)</strong></p>
   <table class="audio-demo-table" aria-label="Audio demo comparison by transition time and optimizer">
     <thead>
       <tr>
         <th>Transition time ($tt$)</th>
+        <th>Input</th>
+        <th>No EQ</th>
         <th>SGD</th>
         <th>Adam</th>
         <th>Newton</th>
@@ -246,6 +277,8 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
     <tbody>
       <tr class="audio-demo-row" data-row-label="tt = 1.0 s">
         <td class="tt-label">1.0 s</td>
+        <td><button class="demo-play-btn" data-label="Input" data-src="assets/audio/example/input_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="No EQ" data-src="assets/audio/example/noEQ_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Newton" data-src="assets/audio/example/EQ_Newton_FD_MSE_tt1p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
@@ -264,6 +297,8 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
 
       <tr class="audio-demo-row" data-row-label="tt = 15.0 s">
         <td class="tt-label">15.0 s</td>
+        <td><button class="demo-play-btn" data-label="Input" data-src="assets/audio/example/input_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="No EQ" data-src="assets/audio/example/noEQ_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Newton" data-src="assets/audio/example/EQ_Newton_FD_MSE_tt15p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
@@ -282,6 +317,8 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
 
       <tr class="audio-demo-row" data-row-label="tt = 30.0 s">
         <td class="tt-label">30.0 s</td>
+        <td><button class="demo-play-btn" data-label="Input" data-src="assets/audio/example/input_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
+        <td><button class="demo-play-btn" data-label="No EQ" data-src="assets/audio/example/noEQ_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="SGD" data-src="assets/audio/example/EQ_SGD_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Adam" data-src="assets/audio/example/EQ_Adam_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
         <td><button class="demo-play-btn" data-label="Newton" data-src="assets/audio/example/EQ_Newton_FD_MSE_tt30p0_FilthyBird_IdLikeToKnow_MIX.wav">Play</button></td>
@@ -300,15 +337,71 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
     </tbody>
   </table>
 
-  <p class="demo-status" id="audio-demo-status">
-    <strong>Status:</strong> Stopped.
-  </p>
+  <div class="demo-status demo-progress-wrap" aria-live="polite">
+    <div class="demo-progress-head">
+      <strong id="audio-demo-now-playing">Stopped.</strong>
+      <span id="audio-demo-progress-meta">00:00 / 00:00</span>
+    </div>
+    <progress id="audio-demo-progress" value="0" max="1">0%</progress>
+  </div>
 </div>
 
 <script>
   (function () {
     var rows = Array.prototype.slice.call(document.querySelectorAll('.audio-demo-row'));
-    var statusEl = document.getElementById('audio-demo-status');
+    var nowPlayingEl = document.getElementById('audio-demo-now-playing');
+    var progressEl = document.getElementById('audio-demo-progress');
+    var progressMetaEl = document.getElementById('audio-demo-progress-meta');
+    var activeAudio = null;
+    var activeLabel = '';
+    var activeRowLabel = '';
+
+    function formatTime(seconds) {
+      if (!isFinite(seconds) || seconds < 0) {
+        return '00:00';
+      }
+      var total = Math.floor(seconds);
+      var minutes = Math.floor(total / 60);
+      var secs = total % 60;
+      return String(minutes).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+    }
+
+    function refreshProgress() {
+      if (!activeAudio) {
+        progressEl.max = 1;
+        progressEl.value = 0;
+        progressMetaEl.textContent = '00:00 / 00:00';
+        return;
+      }
+
+      var duration = isFinite(activeAudio.duration) && activeAudio.duration > 0 ? activeAudio.duration : 0;
+      var current = isFinite(activeAudio.currentTime) && activeAudio.currentTime > 0 ? activeAudio.currentTime : 0;
+      progressEl.max = duration > 0 ? duration : 1;
+      progressEl.value = duration > 0 ? Math.min(current, duration) : 0;
+      progressMetaEl.textContent = formatTime(current) + ' / ' + formatTime(duration);
+    }
+
+    function setNowPlaying(text) {
+      nowPlayingEl.textContent = text;
+    }
+
+    function setActiveAudio(audio, label, rowLabel) {
+      activeAudio = audio;
+      activeLabel = label;
+      activeRowLabel = rowLabel;
+      setNowPlaying('Playing ' + label + ' at ' + rowLabel + '.');
+      refreshProgress();
+    }
+
+    function clearActiveAudioIfMatch(audio) {
+      if (activeAudio === audio) {
+        activeAudio = null;
+        activeLabel = '';
+        activeRowLabel = '';
+        setNowPlaying('Stopped.');
+        refreshProgress();
+      }
+    }
 
     function clearRowVisual(row) {
       row.classList.remove('is-active');
@@ -322,6 +415,7 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
       audio.pause();
       audio.currentTime = 0;
       clearRowVisual(row);
+      clearActiveAudioIfMatch(audio);
     }
 
     function stopOtherRows(activeRow) {
@@ -330,10 +424,6 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
           stopRow(row);
         }
       });
-    }
-
-    function setStatus(text) {
-      statusEl.innerHTML = '<strong>Status:</strong> ' + text;
     }
 
     function markSelected(row, selectedBtn, isPlaying) {
@@ -361,22 +451,24 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
       stopOtherRows(row);
 
       markSelected(row, btn, true);
+      setActiveAudio(audio, label, rowLabel);
 
       if (sameSource) {
         audio.play().catch(function () {});
-        setStatus('Playing ' + label + ' at ' + rowLabel + '.');
+        refreshProgress();
         return;
       }
 
       audio.pause();
       audio.setAttribute('src', src);
+      audio.load();
 
       var finalizeSwitch = function () {
         if (isFinite(audio.duration) && audio.duration > 0) {
           audio.currentTime = Math.min(keepTime, Math.max(0, audio.duration - 0.05));
         }
         audio.play().catch(function () {});
-        setStatus('Playing ' + label + ' at ' + rowLabel + '.');
+        refreshProgress();
       };
 
       if (audio.readyState >= 1) {
@@ -400,17 +492,31 @@ The table below compares FD-MSE equalized versions of the same song. Rows corres
       pauseBtn.addEventListener('click', function () {
         audio.pause();
         row.classList.remove('is-active');
-        setStatus('Paused at ' + row.getAttribute('data-row-label') + '.');
+        if (activeAudio === audio) {
+          setNowPlaying('Paused ' + activeLabel + ' at ' + activeRowLabel + '.');
+          refreshProgress();
+        }
       });
 
       stopBtn.addEventListener('click', function () {
         stopRow(row);
-        setStatus('Stopped at ' + row.getAttribute('data-row-label') + '.');
       });
 
       audio.addEventListener('ended', function () {
         clearRowVisual(row);
-        setStatus('Playback ended at ' + row.getAttribute('data-row-label') + '.');
+        clearActiveAudioIfMatch(audio);
+      });
+
+      audio.addEventListener('timeupdate', function () {
+        if (activeAudio === audio) {
+          refreshProgress();
+        }
+      });
+
+      audio.addEventListener('loadedmetadata', function () {
+        if (activeAudio === audio) {
+          refreshProgress();
+        }
       });
     });
   })();
